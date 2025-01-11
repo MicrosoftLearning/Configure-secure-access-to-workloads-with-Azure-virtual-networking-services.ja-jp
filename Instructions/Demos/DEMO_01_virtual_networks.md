@@ -1,64 +1,64 @@
 ---
 demo:
-  title: 仮想ネットワークとピアリングの作成と構成
-  module: Guided Project - Configure secure access to workloads with Azure virtual networking services
+    title: 'Demonstration: Create and Configure Virtual Networks and peering'
+    module: 'Guided Project - Configure secure access to workloads with Azure virtual networking services'
 ---
-## デモ - 仮想ネットワークとピアリングの作成と構成
+## Demonstration – Create and Configure Virtual Networks and peering
 
 
-このデモには、仮想ネットワークを作成します。
+In this demonstration, you will create virtual networks.
 
-**注:**  推奨値を設定することも、独自のカスタム値を設定することもできます。
+**Note:** You can use the suggested values for the settings, or your own custom values if you prefer.
 
-**注:** ライブ デモを実行できない場合は、**[仮想ネットワークの対話型ラボ シミュレーション](https://mslearn.cloudguides.com/en-us/guides/AZ-900%20Exam%20Guide%20-%20Azure%20Fundamentals%20Exercise%204?azure-portal=true)** と**[仮想ネットワーク ピアリング](https://mslabs.cloudguides.com/guides/AZ-104%20Exam%20Guide%20-%20Microsoft%20Azure%20Administrator%20Exercise%209?azure-portal=true)** を使用し、クリックして同様のラボにアクセスできます。 対話型シミュレーションと推奨されるデモの間に若干の違いがある場合がありますが、示されている主要な概念とアイデアは同じです。 
+**Note:** An **[interactive lab simulation for virtual networks](https://mslearn.cloudguides.com/en-us/guides/AZ-900%20Exam%20Guide%20-%20Azure%20Fundamentals%20Exercise%204?azure-portal=true)** and **[Virtual network peering](https://mslabs.cloudguides.com/guides/AZ-104%20Exam%20Guide%20-%20Microsoft%20Azure%20Administrator%20Exercise%209?azure-portal=true)** is available that allows you to click through a similar lab if you are unable to do a live demonstration. You may find slight differences between the interactive simulation and the suggested demo, but the core concepts and ideas being demonstrated are the same. 
 
 
-[クイック スタート: 仮想ネットワークを作成する - Azure portal](https://docs.microsoft.com/azure/virtual-network/quick-create-portal)
+[Quickstart: Create a virtual network - Azure portal](https://docs.microsoft.com/azure/virtual-network/quick-create-portal)
 
-### Portal で仮想ネットワークを作成する
+### Create a virtual network in the portal
 
 
    
-1.  [サポート スライド] デモを開始する前に、仮想ネットワークとは何か、Azure Virtual Networks の主要な概念とは何かを確認しましょう。 このスライドを使用して、Azure Virtual Networks の機能を強調表示します。 Azure Virtual Network の概念とベスト プラクティスも含まれます。 仮想ネットワークの作成をデモンストレーションしながら、アドレス空間、サブネット、リージョン、サブスクリプションの基本的な概念について説明できます。 また、最後にスライドについて説明し、すぐにデモを開始することもできます。
+1.  [Supporting Slide] Before beginning the demonstration, let's review what virtual networks are and key concepts for Azure Virtual Networks. Use this slide to highlight the capabilities of Azure Virtual Networks. As well as Azure Virtual Network concepts and best practices. As you demonstrate creating a virtual network you can explain the basic concepts of address space, subnets, regions, and subscriptions. You could also discuss these slides at the end and get straight into the demonstration.
    
-2.  Azure portal にサインインし、 **仮想ネットワーク**を検索します。
+2.  Sign in the to the Azure portal and search for **Virtual Networks**.
    
-3.  仮想ネットワークを作成し、基本的な設定を説明します。 少なくとも 1 つのサブネットが作成されていることを確かめます。 
+3.  Create a virtual network, explaining the basic settings as you go. Ensure at least one subnet is created. 
    
-4.  Azure portal が使いやすいインターフェイスを提供することを説明します。 赤いアスタリスクが付いた項目は必須です。
+4.  Explain the Azure portal provides an easy-to-use interface. Items marked with a red asterisk are required.
    
-5.  [サポート スライド] [セキュリティ] タブを選択します。このスライドを使用してセキュリティ サービスを簡単に強調表示します。これらのトピックについては、コースの後半で詳しく説明します。 詳細については、仮想ネットワークにデプロイできるサービスを参照してください。 
+5.  [Supporting Slide] Select the Security tab. Use this slide to highlight the security services briefly, these topics will be covered in more detail later in the course. Learn more, Services that can be deployed into a virtual network. 
    
-6.  [サポート スライド] [IP アドレス] タブを選択します。このスライドを使用して、仮想ネットワークとサブネットを計画する方法を確認します。 サブネットを追加または変更して、サブネットを構成する方法を受講者に示します。 
-7.  [確認] をクリックして、検証エラーがないことを確認します。
-8.  [作成] をクリックして、仮想ネットワークがデプロイされるまで待ちます。 通知メッセージを示します。 
-9.  リソースに移動する方法を示します。
-10. VNET ピアリングのデモができるように、別の仮想ネットワークを作成するプロセスを繰り返します。
+6.  [Supporting Slide] Select the IP Addresses tab. Use this slide to review: Plan virtual networks and subnets. Add or modify a subnet to demonstrate to students how to configure subnets. 
+7.  Click Review and ensure there are no validation errors.
+8.  Click Create and wait for the virtual network to be deployed. Point out the notification messages. 
+9.  Show how to go to the resource.
+10. Repeat the process of creating another virtual network so you can demonstrate VNet Peering.
 
-## VNet ピアリングを構成する
+## Configure VNet Peering
 
-**注:**  このデモには、2 つの仮想ネットワークが必要です。
+**Note:** For this demonstration you will need two virtual networks.
 
-[VNET ピアリングを使用して仮想ネットワークを接続する - チュートリアル](https://docs.microsoft.com/azure/virtual-network/tutorial-connect-virtual-networks-portal)
+[Connect virtual networks with VNet peering - tutorial](https://docs.microsoft.com/azure/virtual-network/tutorial-connect-virtual-networks-portal)
 
-**1 番目の仮想ネットワークの VNet ピアリングを構成する**
+**Configure VNet peering on the first virtual network**
 
-1.  **Azure portal** で、1 番目の仮想ネットワークを選択します。 ピアリングの値を確認します。 
+1. In the **Azure portal**, select the first virtual network. Review the value of peering. 
 
-1.  **[設定]** で、 **[ピアリング]** 、 **[+ 追加]** の順に選択し、新しいピアリングを追加します。
+1. Under **Settings**, select **Peerings** and **+ Add** a new peering.
 
-1. 2 番目の仮想ネットワークのピアリングを構成します。 情報アイコンを使用して、さまざまな設定を確認します。 
+1. Configure the peering the second virtual network. Use the information icons to review the different settings. 
 
-1. ピアリングが完了したら、 **[ピアリング状態]** を確認します。 
+1. When the peering is complete, review the **Peering status**. 
 
-**2 番目の仮想ネットワークの VNET ピアリングを確認する**
+**Confirm VNet peering on the second virtual network**
 
-1.  **Azure portal** で、2 番目の仮想ネットワークを選択します
+1. In the **Azure portal**, select the second virtual network
 
-1.  **[設定]** で、 **[ピアリング]** を選択します。
+1. Under **Settings**, select **Peerings**.
 
-1. ピアリングが自動的に作成されていることがわかります。  **[ピアリング状態]**  が **[接続済み]** であることに注目してください。
+1. Notice that a peering has automatically been created. Notice that the **Peering Status** is **Connected**.
 
 
->**注**: 受講者は LAB_01 を完了できるようになりました
+>**Note**: Students should now be able to complete LAB_01
 

@@ -1,60 +1,60 @@
 ---
 demo:
-  title: デモ – Azure Firewall の作成と構成
-  module: Guided Project - Configure secure access to workloads with Azure virtual networking services
+    title: 'Demonstration: Create and configure Azure Firewall'
+    module: 'Guided Project - Configure secure access to workloads with Azure virtual networking services'
 ---
-## デモ – Azure Firewall の作成と構成
+## Demonstration – Create and configure Azure Firewall
 
-**注:** Azure Firewall のデプロイには数分かかる場合があります。
+**Note:** Azure Firewall can take a few minutes to deploy.
 
-このデモでは、Azure Firewall について説明します。
-Azure Firewall ポリシーとファイアウォール ポリシーを確認して作成します。
-1.  [サポート スライド] デモを開始する前に、Azure Firewall の内容を確認しましょう。
-2.  Azure portal にアクセスします。
-3.  Azure ファイアウォールを作成する。
-4.  ⓘ [基本] タブで、入力するときに使用できる構成オプションについて説明します。 
-5.  他の既定値をそのまま使用し、 [確認および作成] を選択します。
-6.  デプロイが完了したら、ファイアウォール リソースに移動し、概要ページを確認します。 
+In this demonstration, explore Azure Firewall.
+Review and create an Azure Firewall and Firewall policy.
+1.	[Supporting Slide] Before beginning the demonstration, let's review what Azure Firewall is.
+2.	Access the Azure portal.
+3.	Create an Azure Firewall.
+4.	ⓘ on the Basics tab explain the configuration options available as you fill them out. 
+5.	Accept the other default values, then select Review + create.
+6.	After deployment is completed, go to the firewall resource, and review the overview page. 
 
 
-### アプリケーション ルールを構成する 
+### Configure an application rule 
 
-1. [サポート スライド] Azure Firewall ポリシー規則
+1. [Supporting Slide] Azure Firewall policy rules
 
-これは、 www.google.com へのアウトバウンド アクセスを許可するアプリケーション ルールです。
-1.  作成したファイアウォール ポリシーに移動します。
-2.  [Application rules](アプリケーション ルール) を選択します。
-3.  [規則コレクションの追加] を選択します。
-4.  [名前] に「App-Coll01」と入力します。
-5.  [優先度] に「200」と入力します。
-6.  [規則コレクション アクション] で [許可] を選択します。
-7.  [ルール] の [名前] に「Allow-Google」と入力します。
-8.  [Source type](送信元の種類) で、 [IP アドレス] を選択します。
-9.  [送信元] に「10.0.2.0/24」と入力します。
-10. [プロトコル:ポート] に「http, https」と入力します。
-11. [送信先の種類] として [FQDN] を選択します。
-12. [宛先] に「www.google.com」と入力します。
-13. [追加] を選択します。
+This is the application rule that allows outbound access to www.google.com.
+1.	Navigate to the firewall policy you created.
+2.	Select Application rules.
+3.	Select Add a rule collection.
+4.	For Name, enter App-Coll01.
+5.	For Priority, enter 200.
+6.	For Rule collection action, select Allow.
+7.	Under Rules, for Name, enter Allow-Google.
+8.	For Source type, select IP address.
+9.	For Source, enter 10.0.2.0/24.
+10.	For Protocol:port, enter http, https.
+11.	For Destination Type, select FQDN.
+12.	For Destination, enter www.google.com
+13.	Select Add.
 
-Azure Firewall には、既定で許可されるインフラストラクチャ FQDN 用の組み込みのルール コレクションが含まれています。 これらの FQDN はプラットフォームに固有であり、他の目的には使用できません。 詳細については、インフラストラクチャ FQDN に関する記事を参照してください。
+Azure Firewall includes a built-in rule collection for infrastructure FQDNs that are allowed by default. These FQDNs are specific for the platform and can't be used for other purposes. For more information, see Infrastructure FQDNs.
 
-### ネットワーク ルールを構成する
-これは、ポート 53 (DNS) で 2 つの IP アドレスへのアウトバウンド アクセスを許可するネットワーク ルールです。
-1.  [ネットワーク ルール] を選択します。
-2.  [規則コレクションの追加] を選択します。
-3.  [名前] に「Net-Coll01」と入力します。
-4.  [優先度] に「200」と入力します。
-5.  [規則コレクション アクション] で [許可] を選択します。
-6.  [規則コレクション グループ] で、DefaultNetworkRuleCollectionGroup を選択します。
-7.  [ルール] の [名前] に「Allow-DNS」と入力します。
-8.  [Source type](送信元の種類) で、 [IP アドレス] を選択します。
-9.  [送信元] に「10.0.2.0/24」と入力します。
-10. [プロトコル] で [UDP] を選択します。
-11. [宛先ポート] に「53」と入力します。
-12. [送信先の種類] として [IP アドレス] を選択します。
+### Configure a network rule
+This is the network rule that allows outbound access to two IP addresses at port 53 (DNS).
+1.	Select Network rules.
+2.	Select Add a rule collection.
+3.	For Name, enter Net-Coll01.
+4.	For Priority, enter 200.
+5.	For Rule collection action, select Allow.
+6.	For Rule collection group, select DefaultNetworkRuleCollectionGroup.
+7.	Under Rules, for Name, enter Allow-DNS.
+8.	For Source type, select IP Address.
+9.	For Source, enter 10.0.2.0/24.
+10.	For Protocol, select UDP.
+11.	For Destination Ports, enter 53.
+12.	For Destination type select IP address.
 
->**注**: 受講者は LAB_04 を完了できるようになりました
-14. [宛先] に「209.244.0.3, 209.244.0.4」と入力します。
-これらは、CenturyLink によって運用されるパブリック DNS サーバーです。
-15. [追加] を選択します。
+>**Note**: Students should now be able to complete LAB_04
+14.	For Destination, enter 209.244.0.3, 209.244.0.4.
+These are public DNS servers operated by CenturyLink.
+15.	Select Add.
 

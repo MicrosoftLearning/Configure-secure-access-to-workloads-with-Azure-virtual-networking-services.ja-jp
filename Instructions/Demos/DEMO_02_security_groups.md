@@ -1,57 +1,57 @@
 ---
 demo:
-  title: 'デモ: ネットワーク セキュリティ グループの作成と構成'
-  module: Guided Project - Configure secure access to workloads with Azure virtual networking services
+    title: 'Demonstration: Create and configure network security groups'
+    module: 'Guided Project - Configure secure access to workloads with Azure virtual networking services'
 ---
-## デモ - ネットワーク セキュリティ グループの作成と構成
+## Demonstration – Create and configure network security groups
 
 
-このデモでは、セキュリティ グループについて説明します。 
+In this demonstration, we will explore security groups. 
 
- **注:** ライブ デモを実行できない場合は、**[仮想ネットワークの対話型ラボ シミュレーション](https://mslearn.cloudguides.com/en-us/guides/AZ-900%20Exam%20Guide%20-%20Azure%20Fundamentals%20Exercise%2013?azure-portal=true)** を使用して、同様のラボをクリックできます。 対話型シミュレーションと推奨されるデモの間に若干の違いがある場合がありますが、示されている主要な概念とアイデアは同じです。 
+**Note:** An **[interactive lab simulation for virtual networks](https://mslearn.cloudguides.com/en-us/guides/AZ-900%20Exam%20Guide%20-%20Azure%20Fundamentals%20Exercise%2013?azure-portal=true)** is available that allows you to click through a similar lab if you are unable to do a live demonstration. You may find slight differences between the interactive simulation and the suggested demo, but the core concepts and ideas being demonstrated are the same. 
 
-[PaaS リソースへのアクセスを制限する - チュートリアル - Azure portal](https://docs.microsoft.com/azure/virtual-network/tutorial-restrict-network-access-to-resources)
+[Restrict access to PaaS resources - tutorial - Azure portal](https://docs.microsoft.com/azure/virtual-network/tutorial-restrict-network-access-to-resources)
 
-### ネットワーク セキュリティ グループの作成
+### Create a network security group
 
-1. Azure portal にアクセスします。
+1. Access the Azure Portal.
 
-1.  **ネットワーク セキュリティ グループ**を検索して選択します。
+1. Search for and select the **Network Security Groups**.
 
-1. [サポート スライド] 設定を説明する NSG を順次作成します。 
+1. [Supporting Slide] Create a NSG explaining the settings as you go. 
  
-1. 新しい NSG がデプロイされるのを待ちます。
+1. Wait for the new NSG to deploy.
 
-**受信規則と送信規則を詳しく見る**
+**Explore inbound and outbound rules**
 
-1. 新しい NSG を選択します。
+1. Select your new NSG.
 
-1. [サポート スライド] NSG をサブネットまたはネットワーク インターフェイスに関連付ける方法を説明します。
+1. [Supporting Slide] Discuss how the NSG can be associated with subnets or network interfaces.
 
-1. インバウンドおよびアウトバウンド規則の目的について説明します。  
+1. Discuss the purpose inbound and outbound rules.  
 
-1. 既定のインバウンドおよびアウトバウンド規則を確認します。 
+1. Review the default inbound and outbound rules. 
 
-1. 新しい規則を作成し、設定を説明します。 具体的には、サービスの選択 (HTTPS など) と優先順位の設定について説明します。 
+1. Create a new rule, explaining the settings as you go. Specifically discuss the service selection (like HTTPS) and the priority settings. 
  
 
-### ASG の作成
+### Create ASG
  
-1. [サポート スライド]  **[アプリケーション セキュリティ グループ]** を検索して選択します。
+1. [Supporting Slide] Search for and select the **Application Security Groups**.
 
-1. 設定を説明する ASG を順次作成します。 
+1. Create an ASG explaining the settings as you go. 
  
-1. 新しい ASG がデプロイされるまで待ちます。
+1. Wait for the new ASG to deploy.
 
-1. ASG を NSG ルールに関連付ける方法について説明します。
-
-
-### NSG を関連付ける 
-1.  作成した NSG に移動する
-1.  「設定」セクションから [サブネット] を選択します。
-1.  サブネットページで [+ 関連付け] を選択します。
-1.  サブネットの関連付けで [仮想ネットワーク] を選択します。
+1. Discuss how the ASG can be associated with NSG rules.
 
 
->**注**: 受講者は LAB_02 を完了できるようになりました
+### Associate the NSGs 
+1.	Navigate to the NSG you created
+1.	Select Subnets from the Settings section.
+1.	In the Subnets page, select + Associate
+1.	Under Associate subnet, select your Virtual network.
+
+
+>**Note**: Students should now be able to complete LAB_02
 
