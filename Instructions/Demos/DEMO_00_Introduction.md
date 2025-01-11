@@ -1,40 +1,40 @@
 ---
 demo:
-  title: 'デモ: 受講者の資料とラボ環境 (調整)'
-  module: Guided Project - Configure secure access to workloads with Azure virtual networking services
+    title: 'Demonstration: Student materials and lab environment (adjust)'
+    module: 'Guided Project - Configure secure access to workloads with Azure virtual networking services'
 ---
-## デモ - 受講者の資料とラボ環境 (オプション)
+## Demonstration - Student materials and lab environment (optional)
 
-このデモを使用して、ラボ環境と学生向け教材にアクセスする方法を学生に示します。 これは、クラスの開始時または次のデモの前に行うことができます。 
+Use this demonstration to show students how to access the lab environment and student materials. You can do this at the beginning of class or before the next demonstration. 
 
-### 学生にラボ環境を示す (ラボの主催者に合わせて調整する)
+### Show students the lab environment (adjust for your lab hoster)
 
-- 学生がラボ環境にアクセスする方法について説明します。 
+- Discuss how students access the lab environment. 
 
-- 仮想マシン ホストにサインインする方法について説明します。
+- Explain how to sign-in to the virtual machine host.
 
-- [Azure portal](https://portal.azure.com) にアクセスする方法について説明します。 別のウィンドウではなく、ラボ環境で Azure portal を開くことを勧めます。 何人の受講者がポータルを使用したことがあるかを挙手してもらいます。 
+- Explain how to access the [Azure portal](https://portal.azure.com). It is preferred to open the Azure portal in the lab environment instead of a separate window. Ask for a show of hands on how many students have used the portal. 
 
-- ラボ用に既に構成されているリソースについて説明します。
+- Explain what resources have already been configured for the labs.
 
-- ラボの手順を使用する方法を確認します。 
+- Review how to use the lab instructions. 
 
-- ホストに固有のその他のトピックを追加します。 
+- Add other topics specific to your hoster. 
 
-### 受講者にコース資料を示します。
+### Show students their course materials.
 
-- [Microsoft Learn ページ](https://learn.microsoft.com)にアクセスします。
+- Access the [Microsoft Learn page](https://learn.microsoft.com).
 
-- Microsoft Learn が、すべての Azure ドキュメント、トレーニング、認定、評価の優れたソースであることを説明します。 
+- Discuss that Microsoft Learn is a great source for all Azure documentation, training, certifications, and assessments. 
 
-- **ラーニングパス**を選択し、**Azure 仮想ネットワーク ラーニング パスを使用してワークロードへのセキュリティで保護されたアクセスを構成する**を検索します。
+- Select **Learning Paths** and then search for the **Configure secure access to your workloads using Azure virtual networking** learning path.
 
-- ラーニング パス内のコンテンツはこの評価に固有であるものの、それ以外にもレビューできるストレージ コンテンツが多くあることを説明します。
+- Discuss that the content in the learning path is specific to this assessment, but there is much more storage content they can review.
 
-- コンテンツが参考資料であり、教室のプレゼンテーションと 1 対 1 で対応するものではないことを説明します。
+- Explain the content is reference material and there isn't a 1:1 mapping with the classroom presentations.
 
-- これらの各モジュールに追加のハンズオン アクティビティがある可能性があることを説明します。 コースを進めるとき、これらのアクティビティを特定します。 
+- Discuss that each of these modules may have additional hands-on activities. You will identify these activities as the course progresses. 
 
-- ラーニング パスを見つけてブックマークするように学生に依頼します。
+- Ask the students to locate and bookmark the learning path.
 
  

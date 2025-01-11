@@ -1,49 +1,50 @@
 ---
 demo:
-  title: デモンストレーション - ネットワーク ルーティングの作成と構成
-  module: Guided Project - Configure secure access to workloads with Azure virtual networking services
+    title: 'Demonstration: Create and configure network routing'
+    module: 'Guided Project - Configure secure access to workloads with Azure virtual networking services'
 ---
-## デモンストレーション - ネットワーク ルーティングの作成と構成
+## Demonstration – Create and configure network routing
 
-このデモでは、ルート テーブルの作成、カスタム ルートの定義、およびルートをサブネットに関連付ける方法について説明します。 
-
-
-**注:**  このデモでは、少なくとも 1 つのサブネットを持つ仮想ネットワークが必要です。
-
-[ネットワーク トラフィックをルーティングする - チュートリアル - Azure portal](https://learn.microsoft.com/azure/virtual-network/tutorial-create-route-table-portal#create-a-route-table)
+In this demonstration, we will learn how to create a route table, define
+a custom route, and associate the route with a subnet. 
 
 
-### ルート テーブルの作成 
+**Note:** This demonstration requires a virtual network with at least one subnet.
 
-1. 時間があれば、チュートリアルの図を確認してください。 ユーザー定義ルートを作成する必要がある理由を説明します。 
+[Route network traffic - tutorial - Azure portal](https://learn.microsoft.com/azure/virtual-network/tutorial-create-route-table-portal#create-a-route-table)
 
-1. Azure ポータルにアクセスします。
 
-1. **ルート テーブル**を検索して選択します。 **ゲートウェイ ルートの伝達**を使用する必要がある場合について説明します。 
+### Create a Route table 
 
-1. ルーティング テーブルを作成し、一般的でない設定について説明します。 
+1. As you have time review the tutorial diagram. Explain why you need to create a user-defined route. 
 
-1. 新しいルーティング テーブルがデプロイされるのを待ちます。
+1. Access the Azure portal.
 
-**ルートを追加する**
+1. Search for and select **Route tables**. Discuss when **propagate gateway routes** should be used. 
 
-1.  新しいルーティング テーブルを選んでから、 **[ルート]** を選択します。
+1. Create a routing table, explain any uncommon settings. 
 
-1.  新しい**ルート**を作成します。 使用できるさまざまな**ホップの種類**について説明します。 
+1. Wait for the new routing table to be deployed.
 
-1.  新しいルートを作成し、リソースがデプロイされるまで待ちます。
+**Add a route**
+
+1.  Select your new routing table, and then select **Routes**.
+
+1.  Create a new **route**. Discuss the different **hop types** that are available. 
+
+1.  Create the new route and wait for the resource to be deployed.
  
-### サブネットへのルート テーブルの関連付け
-1 つのルート テーブルを、0 個以上のサブネットに関連付けることができます。 ルート テーブルは仮想ネットワークには関連付られません。 ルート テーブルを関連付ける各サブネットにルート テーブルを関連付ける必要があります。
+### Associate a Route Table to a subnet
+A route table can be associated to zero or more subnets. Route tables aren't associated to virtual networks. You must associate a route table to each subnet you want the route table associated to.
 
 
-1.  ルーティング テーブルに関連付けるサブネットに移動します。
+1.  Navigate to the subnet you want to associate with the routing table.
 
-1.   **[ルート テーブル]** を選択し、新しいルーティング テーブルを選びます。 
+1.  Select **Route table** and choose your new routing table. 
 
-1.  変更内容を**保存**します。 
+1.  **Save** your changes.
 
  
->**注**: ルート テーブルは、そのルート テーブルと同じ Azure の場所とサブスクリプションに存在する仮想ネットワーク内のサブネットにのみ関連付けることができます。
+>**Note**: You can only associate a route table to subnets in virtual networks that exist in the same Azure location and subscription as the route table.
 
->**注**: 受講者は LAB_04 を完了できるようになりました
+>**Note**: Students should now be able to complete LAB_04
