@@ -33,7 +33,7 @@ lab:
 
 **注**: このラボを完了するには、**共同作成者** RBAC ロールが割り当てられた [Azure サブスクリプション](https://azure.microsoft.com/free/)が必要です。 このラボでは、リソースの作成を求められたときに、指定されていないプロパティには既定値を使います。
 
-### ハブとスポークの仮想ネットワークとサブネットを作成する
+## ハブとスポークの仮想ネットワークとサブネットを作成する
 
 [Azure Virtual Network](https://learn.microsoft.com/azure/virtual-network/virtual-networks-overview) を使用すると、さまざまな種類の Azure リソースが相互、インターネット、およびオンプレミス ネットワークと安全に通信できます。 仮想ネットワーク内のすべての Azure リソースは、仮想ネットワーク内の[サブネット](https://learn.microsoft.com/azure/virtual-network/virtual-network-manage-subnet?tabs=azure-portal)にデプロイされます。 
 
@@ -71,7 +71,7 @@ lab:
 
 1. 仮想ネットワークとサブネットがデプロイされたことを確認します。 
 
-### 仮想ネットワーク間のピア関係を構成する
+## 仮想ネットワーク間のピア関係を構成する
 
 Azure の 2 つ以上の仮想ネットワークにシームレスに接続するには、[仮想ネットワーク ピアリング](https://learn.microsoft.com/azure/virtual-network/virtual-network-peering-overview)を使用できます。 
 
