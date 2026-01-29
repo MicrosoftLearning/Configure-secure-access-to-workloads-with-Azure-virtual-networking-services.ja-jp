@@ -29,7 +29,7 @@ lab:
 
 **注:** この演習では、ラボ 01 の仮想ネットワークとサブネットをインストールする必要があります。 これらのリソースをデプロイする必要がある場合は、[テンプレート](https://github.com/MicrosoftLearning/Configure-secure-access-to-workloads-with-Azure-virtual-networking-services/blob/main/Allfiles/Labs/All-Labs/create-vnet-subnets-template.json)が提供されます。
 
-### プライベート DNS ゾーンの作成
+## プライベート DNS ゾーンの作成
 
 [Azure プライベート DNS](https://learn.microsoft.com/azure/dns/private-dns-overview) は、信頼性が高くセキュリティで保護された DNS サービスを提供し、カスタムの DNS ソリューションの追加を必要とせずに、仮想ネットワークでドメイン名を管理および解決します。 プライベート DNS ゾーンを使用することにより、Azure で提供される名前ではなく、独自のカスタム ドメイン名を使用できます。
 
@@ -48,7 +48,7 @@ lab:
 
 1. DNS ゾーンのデプロイを待ってから、**[リソースに移動]** を選択します。 
 
-### プライベート DNS ゾーンへの仮想ネットワーク リンクを作成する
+## プライベート DNS ゾーンへの仮想ネットワーク リンクを作成する
 
 プライベート DNS ゾーンの DNS レコードを解決するには、リソースをプライベート ゾーンにリンクする必要があります。 [仮想ネットワーク リンク](https://learn.microsoft.com/azure/dns/private-dns-virtual-network-links)は、仮想ネットワークをプライベート ゾーンに関連付けます。
 
@@ -66,7 +66,7 @@ lab:
 
 1. **[作成]** を選択し、デプロイが完了するまで待ちます。 必要に応じて、ページを**更新**してください。 
 
-### DNS レコード セットを作成する
+## DNS レコード セットを作成する
 
 [DNS レコード](https://learn.microsoft.com/en-us/azure/dns/dns-zones-records#dns-records)は、DNS ゾーンに関する情報を提供します。 
 
@@ -87,12 +87,12 @@ lab:
 
 **注:** このレコード セットは、プライベート IP アドレスが 10.1.1.5 の app-vnet に仮想マシンが存在します。
 
-### オンライン トレーニングでさらに学習する
+## オンライン トレーニングでさらに学習する
 
 + [Azure DNS の概要](https://learn.microsoft.com/training/modules/intro-to-azure-dns/)。 このモジュールでは、Azure DNS の機能、そのしくみ、および組織のニーズを満たすソリューションとして Azure DNS を使用することを選択すべきタイミングについて説明します。
 + [Azure DNS でドメインをホストする](https://learn.microsoft.com/training/modules/host-domain-azure-dns/)。 このモジュールでは、DNS ゾーンと DNS レコードを作成する方法について説明します。
 
-### 要点
+## 要点
 
 以上でこの演習は完了です。 重要なポイントを以下に示します。
 
