@@ -2,6 +2,13 @@
 lab:
   title: '演習 01: 仮想ネットワークを作成して構成する。'
   module: Guided Project - Configure secure access to workloads with Azure virtual networking services
+  description: 仮想ネットワーク、サブネット、ピアリングを作成して構成します。
+  duration: 20 minutes
+  level: 300
+  islab: true
+  primarytopics:
+    - Azure
+    - Azure Virtual Network
 ---
 
 # 演習 01: 仮想ネットワークを作成して構成する。

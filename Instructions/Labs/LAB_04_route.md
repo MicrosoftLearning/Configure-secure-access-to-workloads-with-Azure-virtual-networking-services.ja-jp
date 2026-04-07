@@ -2,6 +2,14 @@
 lab:
   title: '演習 04: ネットワーク ルーティングを構成する'
   module: Guided Project - Configure secure access to workloads with Azure virtual networking services
+  description: ルーティング テーブルを作成して構成します。
+  duration: 20 minutes
+  level: 300
+  islab: true
+  primarytopics:
+    - Azure
+    - Azure Virtual Network
+    - Network routing
 ---
 
 # 演習 04: ネットワーク ルーティングを構成する
