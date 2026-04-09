@@ -2,6 +2,13 @@
 lab:
   title: '演習 05: DNS ゾーンを作成して DNS 設定を構成する'
   module: Guided Project - Configure secure access to workloads with Azure virtual networking services
+  description: Azure DNS ゾーンを作成して構成します。
+  duration: 20 minutes
+  level: 300
+  islab: true
+  primarytopics:
+    - Azure
+    - Azure DNS
 ---
 
 # 演習 05: DNS ゾーンを作成して DNS 設定を構成する

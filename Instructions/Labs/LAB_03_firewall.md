@@ -2,6 +2,13 @@
 lab:
   title: '演習 03: Azure Firewall を作成して構成する'
   module: Guided Project - Configure secure access to workloads with Azure virtual networking services
+  description: Azure Firewall を作成して構成します。
+  duration: 25 minutes
+  level: 300
+  islab: true
+  primarytopics:
+    - Azure
+    - Azure Firewall
 ---
 
 # 演習 03: Azure Firewall を作成して構成する
@@ -90,7 +97,7 @@ lab:
 
     | プロパティ               | [値]                                     |
     | :--------------------- | :---------------------------------------- |
-    | 名前                   | `app-vnet-fw-rule-collection`         |
+    | Name                   | `app-vnet-fw-rule-collection`         |
     | 規則コレクションの種類   | **アプリケーション**                           |
     | 優先順位               | `200`                                   |
     | 規則コレクション アクション | **許可**                                 |
@@ -112,7 +119,7 @@ lab:
 
     | プロパティ               | [値]                                 |
     | :--------------------- | :------------------------------------ |
-    | 名前                   | `app-vnet-fw-nrc-dns`               |
+    | Name                   | `app-vnet-fw-nrc-dns`               |
     | 規則コレクションの種類   | **Network**                           |
     | 優先順位               | `200`                        |
     | 規則コレクション アクション | **許可**                             |
